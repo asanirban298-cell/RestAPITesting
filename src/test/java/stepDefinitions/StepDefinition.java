@@ -66,7 +66,7 @@ public class StepDefinition extends Utilities {
 	@Then("Response body contains {string} with value {string}")
 	public void response_body_contains_with_value(String key, String value) {
 
-		Assert.assertTrue(getJSONPath(response, key).equalsIgnoreCase(value));
+		Assert.assertTrue(getJSONPath(response,key).equals(value));
 
 	}
 
