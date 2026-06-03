@@ -10,6 +10,7 @@ public class Hooks {
 	@Before("@DeletePlace")
 	public void beforeScenario() throws IOException {
 
+		System.out.println("Before hook");
 		StepDefinition sd = new StepDefinition();
 
 		if (StepDefinition.place_id == null) {
@@ -18,11 +19,11 @@ public class Hooks {
 			sd.validate_with_data_from("India", "GetPlaceAPI");
 		}
 	}
-	
+
 	@After("@GetPlace")
 	public void test() {
-		
-		//Code here will run after tag @GetPlace
+
+		// Code here will run after tag @GetPlace
 	}
 
 }

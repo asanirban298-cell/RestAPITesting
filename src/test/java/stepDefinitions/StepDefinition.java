@@ -75,7 +75,6 @@ public class StepDefinition extends Utilities {
 
 		place_id = getJSONPath(response, "place_id");
 		reqSpec = given().spec(requestSpecification()).queryParam("place_id", place_id);
-		APIResources apiRes = APIResources.valueOf(resource);
 		call_with_http_request(resource, "Get");
 		String address = getJSONPath(response, "address");
 		Assert.assertTrue(address.equalsIgnoreCase(key));

@@ -11,28 +11,23 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "accuracy": 50,
-    "address": "India",
-    "language": "Hindi",
-    "location": {
-        "lat": -79.383494,
-        "lng": -9.383494
-    },
-    "name": "Hampi Phoenix",
-    "phone_number": "9999999999",
-    "types": [
-        "shoe park",
-        "shop"
-    ],
-    "website": "rahulshettyacademy.com"
-}
-HTTP/1.1 200 OK
-Date: Thu, 09 Apr 2026 07:18:48 GMT
+    "accuracy": 55,
+    "addHTTP/1.1 404 Not Found
+Date: Wed, 06 May 2026 15:21:35 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Strict-Transport-Security: max-age=604800; includeSubDomains
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
 Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 69
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "msg": "Delete operation failed, looks like the data doesn't exists"
+}
 Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
 Content-Length: 194
 Keep-Alive: timeout=5, max=100
@@ -41,17 +36,30 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "4fe3d0abdf86e757aab3231a6348e9eb",
+    "place_id": "71a4ae697b7923cadb6825dd7fce5df0",
     "scope": "APP",
-    "reference": "964b47eec97a71c5cb6ec40da8455c72964b47eec97a71c5cb6ec40da8455c72",
-    "id": "964b47eec97a71c5cb6ec40da8455c72"
+    "reference": "a3c84974c9bf8f93778d4b1cbf3cd428a3c84974c9bf8f93778d4b1cbf3cd428",
+    "id": "a3c84974c9bf8f93778d4b1cbf3cd428"
 }
 Request method:	GET
-Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=4fe3d0abdf86e757aab3231a6348e9eb
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=71a4ae697b7923cadb6825dd7fce5df0
 Proxy:			<none>
 Request params:	<none>
 Query params:	key=qaclick123
-				place_id=4fe3d0abdf86e757aab3231a6348e9eb
+				place_id=71a4ae697b7923cadb6825dd7fce5df0
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=71a4ae697b7923cadb6825dd7fce5df0
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=71a4ae697b7923cadb6825dd7fce5df0
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
@@ -60,14 +68,14 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Thu, 09 Apr 2026 07:18:50 GMT
+Date: Wed, 06 May 2026 15:21:36 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Strict-Transport-Security: max-age=604800; includeSubDomains
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
 Access-Control-Max-Age: 3600
 Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
-Content-Length: 226
+Content-Length: 254
 Keep-Alive: timeout=5, max=100
 Connection: Keep-Alive
 Content-Type: application/json;charset=UTF-8
@@ -77,13 +85,39 @@ Content-Type: application/json;charset=UTF-8
         "latitude": "-79.383494",
         "longitude": "-9.383494"
     },
-    "accuracy": "50",
+    "accuracy": "55",
     "name": "Hampi Phoenix",
     "phone_number": "9999999999",
-    "address": "India",
+    "address": "41, Gurguntapalya layout, BLR 6",
     "types": "shoe park,shop",
     "website": "rahulshettyacademy.com",
-    "language": "Hindi"
+    "language": "Kannada"
+}
+HTTP/1.1 200 OK
+Date: Wed, 06 May 2026 15:21:36 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Strict-Transport-Security: max-age=604800; includeSubDomains
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 254
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "-79.383494",
+        "longitude": "-9.383494"
+    },
+    "accuracy": "55",
+    "name": "Hampi Phoenix",
+    "phone_number": "9999999999",
+    "address": "41, Gurguntapalya layout, BLR 6",
+    "types": "shoe park,shop",
+    "website": "rahulshettyacademy.com",
+    "language": "Kannada"
 }
 Request method:	POST
 Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
@@ -98,10 +132,97 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "place_id": "4fe3d0abdf86e757aab3231a6348e9eb"
+    "place_id": "71a4ae697b7923cadb6825dd7fce5df0"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accuracy": 50,
+    "address": "31, HRBR layout, New Delhi 6",
+    "language": "English",
+    "location": {
+        "lat": -79.383494,
+        "lng": -9.383494
+    },
+    "name": "Hampi Phoenix",
+    "phone_number": "9999999999",
+    "types": [
+        "shoe park",
+        "shop"
+    ],
+    "website": "rahulshettyacademy.com"
 }
 HTTP/1.1 200 OK
-Date: Thu, 09 Apr 2026 07:18:53 GMT
+Date: Wed, 06 May 2026 15:21:42 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Strict-Transport-Security: max-age=604800; includeSubDomains
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "98f537d6a6649de3e96312efb4c7c2ff",
+    "scope": "APP",
+    "reference": "641f5bece16d4cad3deacef522adef57641f5bece16d4cad3deacef522adef57",
+    "id": "641f5bece16d4cad3deacef522adef57"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=98f537d6a6649de3e96312efb4c7c2ff
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=98f537d6a6649de3e96312efb4c7c2ff
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 06 May 2026 15:21:42 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Strict-Transport-Security: max-age=604800; includeSubDomains
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 251
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "-79.383494",
+        "longitude": "-9.383494"
+    },
+    "accuracy": "50",
+    "name": "Hampi Phoenix",
+    "phone_number": "9999999999",
+    "address": "31, HRBR layout, New Delhi 6",
+    "types": "shoe park,shop",
+    "website": "rahulshettyacademy.com",
+    "language": "English"
+}
+HTTP/1.1 200 OK
+Date: Wed, 06 May 2026 15:21:42 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Strict-Transport-Security: max-age=604800; includeSubDomains
 Access-Control-Allow-Origin: *

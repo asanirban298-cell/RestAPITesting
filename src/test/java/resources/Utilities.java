@@ -54,8 +54,8 @@ public class Utilities {
 
 	public static String getTestData(String fileName, String key) {
 		try {
-			File file = new File(System.getProperty("user.dir") + "//src//test//resources//" + fileName + ".json");
-			InputStream is = new FileInputStream(file);
+			InputStream is = new FileInputStream(
+					System.getProperty("user.dir") + "//src//test//resources//" + fileName + ".json");
 			ObjectMapper mapper = new ObjectMapper();
 			JsonNode rootNode = mapper.readTree(is);
 			return rootNode.path(key).asText();

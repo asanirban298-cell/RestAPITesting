@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/2</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Apr 09 09:32:23 IST 2026</td>
+<td>Started on:</td><td>Wed May 06 20:51:26 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>13 seconds (13806 ms)</td>
+<tr><td>Total time:</td><td>20 seconds (20064 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,69 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='options.TestRunner.runScenario()'><b>runScenario</b><br>Test class: options.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify if place is successfully added with AddPLace API", "Validating Place APIs"</td>
-<td></td>
-<td>8</td>
-<td>options.TestRunner@71809907</td></tr>
-<tr>
-<td title='options.TestRunner.runScenario()'><b>runScenario</b><br>Test class: options.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete place with DeletePlace API", "Validating Place APIs"</td>
+<td title='options.TestRunner.runScenario()'><b>runScenario</b><br>Test class: options.TestRunner<br>Test method: Runs API Scenarios<br>Parameters: "Delete place with DeletePlace API", "Validating Place APIs"</td>
 <td></td>
 <td>4</td>
-<td>options.TestRunner@71809907</td></tr>
+<td>options.TestRunner@7b2bbc3</td></tr>
+<tr>
+<td title='options.TestRunner.runScenario()'><b>runScenario</b><br>Test class: options.TestRunner<br>Test method: Runs API Scenarios<br>Parameters: "Verify if place is successfully added with AddPLace API", "Validating Place APIs"</td>
+<td></td>
+<td>4</td>
+<td>options.TestRunner@7b2bbc3</td></tr>
+<tr>
+<td title='options.TestRunner.runScenario()'><b>runScenario</b><br>Test class: options.TestRunner<br>Test method: Runs API Scenarios<br>Parameters: "Verify if place is successfully added with AddPLace API", "Validating Place APIs"</td>
+<td></td>
+<td>14</td>
+<td>options.TestRunner@7b2bbc3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='options.TestRunner.runScenario()'><b>runScenario</b><br>Test class: options.TestRunner<br>Test method: Runs API Scenarios<br>Parameters: "Verify if place is successfully added with AddPLace API", "Validating Place APIs"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at stepDefinitions.StepDefinition.validate_with_data_from(StepDefinition.java:80)
+	at ✽.Validate &quot;31, HRBR layout, New Delhi 6&quot; with data from &quot;GetPlaceAPI&quot;(file:///Users/anirbansarkar/eclipse-workspace/APIFramework/src/test/java/features/PlaceValidations.feature:10)
+</pre></div><a href='#' onClick='toggleBox("stack-trace999716157", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace999716157'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at stepDefinitions.StepDefinition.validate_with_data_from(StepDefinition.java:80)
+	at ✽.Validate &quot;31, HRBR layout, New Delhi 6&quot; with data from &quot;GetPlaceAPI&quot;(file:///Users/anirbansarkar/eclipse-workspace/APIFramework/src/test/java/features/PlaceValidations.feature:10)
+</pre></div></td>
+<td>14</td>
+<td>options.TestRunner@7b2bbc3</td></tr>
+<tr>
+<td title='options.TestRunner.runScenario()'><b>runScenario</b><br>Test class: options.TestRunner<br>Test method: Runs API Scenarios<br>Parameters: "Delete place with DeletePlace API", "Validating Place APIs"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at stepDefinitions.StepDefinition.api_call_is_successful_with_status_code(StepDefinition.java:62)
+	at ✽.API call is successful with status code 200(file:///Users/anirbansarkar/eclipse-workspace/APIFramework/src/test/java/features/PlaceValidations.feature:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace60381365", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace60381365'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at stepDefinitions.StepDefinition.api_call_is_successful_with_status_code(StepDefinition.java:62)
+	at ✽.API call is successful with status code 200(file:///Users/anirbansarkar/eclipse-workspace/APIFramework/src/test/java/features/PlaceValidations.feature:21)
+</pre></div></td>
+<td>14</td>
+<td>options.TestRunner@7b2bbc3</td></tr>
 </table><p>
 </body>
 </html>
